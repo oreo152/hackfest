@@ -1,57 +1,70 @@
 <!DOCTYPE html>
-<html>
-  <head>
-    <meta charset="utf-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta name="author" content="Pragati" />
-    <title>Login to Mediwise</title>
-    <link href="https://fonts.googleapis.com/css?family=Quicksand" rel="stylesheet" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.0/css/bulma.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma-social@1/bin/bulma-social.min.css" />
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.13.0/css/all.min.css" />
-    <link rel="stylesheet" href="css/styles.css" />
-  </head>
-  <body>
-    <section class="hero is-fullheight">
-      <div class="hero-body">
-        <div class="container has-text-centered">
-          <div class="column is-4 is-offset-4">
-            <div class="box">
-              <p class="subtitle is-4">Please login to proceed.</p>
-              <br />
-              <form>
-                <div class="field">
-                  <p class="control has-icons-left has-icons-right">
-                    <input class="input is-medium" type="email" placeholder="Email" />
-                    <span class="icon is-medium is-left">
-                      <i class="fas fa-envelope"></i>
-                    </span>
-                    <span class="icon is-medium is-right">
-                      <i class="fas fa-check"></i>
-                    </span>
-                  </p>
-                </div>
-                <div class="field">
-                  <p class="control has-icons-left">
-                    <input class="input is-medium" type="password" placeholder="Password" />
-                    <span class="icon is-small is-left">
-                      <i class="fas fa-lock"></i>
-                    </span>
-                  </p>
-                </div>
-                <div class="field">
-                  <label class="checkbox">
-                    <input type="checkbox" />
-                    Remember me
-                  </label>
-                </div>
-                <button class="button is-block is-info is-large is-fullwidth">Login</button><br />
-              </form>
-            </div>   
-          </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edege">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration form</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <div class="title">
+            <p>Registration</p>
         </div>
-      </div>
-    </section>
-  </body>
+
+        <form action="#">
+            <div class="user_details">
+                <div class="input_box">
+                    <label for="name">Full Name</label>
+                    <input type="text" id="name" placeholder="Enter patient name" required>
+                </div>
+                <div class="input_box">
+                    <label for="username">Date-of-Birth</label>
+                    <input type="date" id="username" placeholder="Enter patient DOB" required>
+                </div>
+                <div class="input_box">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" placeholder="Enter patient email" required>
+                </div>
+                <div class="input_box">
+                    <label for="phone">Phone Number</label>
+                    <input type="number" id="phone" placeholder="Enter patient number" required>
+                </div>
+                <div class="input_box">
+                    <label for="pass">Password</label>
+                    <input type="password" id="pass" placeholder="Enter password" required>
+                </div>
+                <div class="input_box">
+                    <label for="confirmPass">Address</label>
+                    <input type="text" id="confirmPass" placeholder="Enter patient Address" required>
+                </div>
+            </div>
+            <div class="gender">
+                <span class="gender_title">Gender</span>
+                <input type="radio" name="gender" id="radio_1">
+                <input type="radio" name="gender" id="radio_2">
+                <input type="radio" name="gender" id="radio_3">
+
+                <div class="category">
+                    <label for="radio_1">
+                        <span class="dot one"></span>
+                        <span>Male</span>
+                    </label>
+                    <label for="radio_2">
+                        <span class="dot two"></span>
+                        <span>Female</span>
+                    </label>
+                    <label for="radio_3">
+                        <span class="dot three"></span>
+                        <span>Prefer not to say</span>
+                    </label>
+                </div>
+            </div>
+            <div class="reg_btn">
+                <input type="submit" value="Register">
+            </div>
+        </form>
+    </div>
+</body>
 </html>
